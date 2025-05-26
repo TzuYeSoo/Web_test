@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Supplier - STI</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="supplier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class='backdrop' id="backdrop"></div>
+    <div class="modal">
+        <div class="modal-header">SUPPLIER</div>
+        <form method="post" action="query_insert_supplier.php">
+            <input type="text" placeholder="First name" name="first_name" required>
+            <input type="text" placeholder="Last name" name="last_name" required>
+            <input type="text" placeholder="Company name" name="company" required>
+            <input type="text" placeholder="Contact" name="contact" required>
+            <input type="date" placeholder="Date Created" name="date_created" required>
+            <textarea placeholder="Description" name="descrition" required></textarea>
+            <button type="submit">ADD</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-items">
+                <a href="dashbord.html" class="nav-item">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <div class="nav-item dropdown">
+                    <button class="dropdown-header">
+                        <i class="fas fa-box"></i>
+                        <span>Inventory</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Uniform.php" class="dropdown-item">
+                            <i class="fas fa-tshirt"></i>
+                            <span>Uniform</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Machine</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Borrow</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>Reservation</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-truck"></i>
+                    <span>Supplier</span>
+                </a>
+                <a href="#" class="nav-item logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </nav>
+
+    <main class="main-content">
+            <header>
+                <div class="logo-section">
+                    <img src="stilogo.png" alt="STI Logo" class="logo">
+                    
+                </div>
+                <div class="user-account">
+                    <img src="alden.png" alt="User" class="avatar">
+                    <span>user account</span>
+                </div>
+            </header>
+
+            <div class="content">
+                <h2>Supplier</h2>
+                <div class="filters">
+                    <button>Current</button>
+                    <button>History</button>
+                </div>
+                <div class="uniform-table-container">
+                    <table class="uniform-table">
+                        <thead>
+                            <tr>
+                                <th>Supplie name</th>
+                                <th>contact</th>
+                                <th>descrition</th>
+                                <th>status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="uniformTableBody">
+                        </tbody>
+                    </table>
+                    <button class="add-row-btn" id="creatsupplier"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+    <script src="supplier.js"></script>
+</div>
+
+</body>
+</html>

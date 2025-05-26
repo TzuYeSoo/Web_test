@@ -1,0 +1,211 @@
+/* Modal Backdrop */
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+/* style sheet for modal of stock in */
+/* Modal Container */
+.stock-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 15px;
+    width: 20%;
+    height: 50%;
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+/* Modal Header */
+.modal-header {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Close Button */
+.modal-close {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-body label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Inputs and Select */
+.modal-body input,
+.modal-body select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.modal-body input:focus,
+.modal-body select:focus {
+    border-color: #007bff;
+}
+
+/* Add Button */
+.add-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background: #dbeeff;
+    font-weight: bold;
+    color: #007bff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-btn:hover {
+    background: #c0e0ff;
+}
+
+
+/* style sheet for modal of adding new uniform */
+
+/* Modal container */
+.clothes-modal {
+    display: none;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+    padding-bottom: 20px;
+    z-index: 1000;
+}
+
+/* Header */
+.modal-header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-close {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Content */
+.modal-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.image-placeholder {
+    width: 120px;
+    height: 120px;
+    background: #ddd;
+    border-radius: 15px;
+}
+
+.image-btn {
+    background: #dbeeff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.left-section input {
+    border-radius: 25px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    outline: none;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkbox-group {
+    border: 2px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    border-radius: 5px;
+}
+
+/* Textarea */
+textarea {
+    width: calc(100% - 40px);
+    margin: 0 auto 20px;
+    display: block;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    font-size: 14px;
+    resize: none;
+    height: 100px;
+    outline: none;
+}
+
+/* Add button */
+.add-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background: #dbeeff;
+    border: none;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+}
